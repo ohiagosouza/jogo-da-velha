@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Tick-Tac-Toe</title>
+  </head>
+  <body>
+    <main id="main">
+      <header>
+        <h1>Tick-Tac-Toe | Jogo da Velha</h1>
+      </header>
+      <div class="players">
+        <h2>Player 1 (X):</h2>
+        <input type="text" id="player1" />
+        <h2>Player 2 (O):</h2>
+        <input type="text" id="player2" />
+        <button id="start">Começar</button>
+      </div>
+      <section id="play">
+        <h2>
+          Agora é a vez de:
+          <span id="playerTurn"></span>
+        </h2>
+      </section>
+      <table id="game">
+        <tbody>
+          <tr>
+            <td class="tableArea" data-region="0"></td>
+            <td class="tableArea" data-region="1"></td>
+            <td class="tableArea" data-region="2"></td>
+          </tr>
+          <tr>
+            <td class="tableArea" data-region="3"></td>
+            <td class="tableArea" data-region="4"></td>
+            <td class="tableArea" data-region="5"></td>
+          </tr>
+          <tr>
+            <td class="tableArea" data-region="6"></td>
+            <td class="tableArea" data-region="7"></td>
+            <td class="tableArea" data-region="8"></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
